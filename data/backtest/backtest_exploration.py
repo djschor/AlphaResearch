@@ -1,0 +1,1 @@
+max_drawdown = (returns.cumsum().max() - returns.cumsum().min()) / returns.cumsum().max()
