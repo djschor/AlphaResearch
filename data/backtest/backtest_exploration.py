@@ -1,1 +1,1 @@
-max_drawdown = (returns.cumsum().max() - returns.cumsum().min()) / returns.cumsum().max()
+max_drawdown = (returns.cumsum().max() - returns.cumsum().min()) / returns.cumsum().max()sharpe_ratio = (port_returns - risk_free_rate) / port_volatility
