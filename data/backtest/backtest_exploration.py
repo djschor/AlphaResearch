@@ -1,1 +1,1 @@
-max_drawdown = (returns.cumsum().max() - returns.cumsum().min()) / returns.cumsum().max()sharpe_ratio = (port_returns - risk_free_rate) / port_volatilitydata = pd.read_csv('stock_data.csv', index_col=0, parse_dates=True)
+max_drawdown = (returns.cumsum().max() - returns.cumsum().min()) / returns.cumsum().max()sharpe_ratio = (port_returns - risk_free_rate) / port_volatilitydata = pd.read_csv('stock_data.csv', index_col=0, parse_dates=True)data['strategy_returns'] = data['positions'].shift(1) * strat_returnscerebro.adddata(bt.feeds.PandasData(dataname=data), name='AAPL')
