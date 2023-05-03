@@ -1,4 +1,4 @@
-# AlphaResearch - Researching ML Strategies for Innovative Quantitative Research*
+# AlphaResearch - Researching ML Strategies for Innovative Quantitative Research
 
 ## Overview
 AlphaResearch is a collection of research experiments aimed at exploring innovative quantitative investment strategies. The goal is to develop novel alpha factors and optimization algorithms to improve portfolio construction and trading. The project includes the following research experiments:
