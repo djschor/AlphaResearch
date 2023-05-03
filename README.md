@@ -1,47 +1,42 @@
-# Stealth - Researching Alpha Factors for Quantitative Research*
+# AlphaResearch - Researching ML Strategies for Innovative Quantitative Research*
 
-### Table of Contents
+## Overview
+AlphaResearch is a collection of research experiments aimed at exploring innovative quantitative investment strategies. The goal is to develop novel alpha factors and optimization algorithms to improve portfolio construction and trading. The project includes the following research experiments:
+1. Autoencoder-Based Alpha Factor Generation
+2. Adversarial Training for Robust Quantitative Strategies
+3. Quantum-Inspired Optimization for Portfolio Construction
+4. Graph Neural Networks for Inter-Asset Relationships
+5. Reinforcement Learning for Dynamic Factor Weighting
 
-- [Introduction](notion://www.notion.so/Stealth-9604c1642b1348adabb8901a3e48eef2#introduction)
-- [Problem Statement](notion://www.notion.so/Stealth-9604c1642b1348adabb8901a3e48eef2#problem-statement)
-- [Data Collection](notion://www.notion.so/Stealth-9604c1642b1348adabb8901a3e48eef2#data-collection)
-- [Feature Engineering](notion://www.notion.so/Stealth-9604c1642b1348adabb8901a3e48eef2#feature-engineering)
-- [Machine Learning Models](notion://www.notion.so/Stealth-9604c1642b1348adabb8901a3e48eef2#machine-learning-models)
-- [Results](notion://www.notion.so/Stealth-9604c1642b1348adabb8901a3e48eef2#results)
-- [Conclusion](notion://www.notion.so/Stealth-9604c1642b1348adabb8901a3e48eef2#conclusion)
-- [References](notion://www.notion.so/Stealth-9604c1642b1348adabb8901a3e48eef2#references)
+Experiment Details
 
-## Introduction
-Stealth is a project focused on researching alpha factors for quantitative research. Alpha factors are variables that are used in quantitative finance models to predict stock prices. By using machine learning techniques to analyze data, it is possible to identify which alpha factors are most effective for predicting stock prices.
+1. Autoencoder-Based Alpha Factor Generation
+This experiment aims to generate novel alpha factors using autoencoders. The approach involves compressing and reconstructing financial data such as stock prices, volume, and order book data. The trained autoencoder model learns a compressed representation of the data, which is then used as an alpha factor for portfolio construction and trading.
 
-This project aims to identify the most effective alpha factors for predicting stock prices using a combination of data analysis, feature engineering, and machine learning algorithms.
+2. Adversarial Training for Robust Quantitative Strategies
+The objective of this experiment is to develop more robust quantitative strategies that are resilient to changing market conditions. The approach involves utilizing adversarial training techniques and a trained GAN to generate synthetic market data that mimics the statistical properties and complexity of real market regimes and noise. The training dataset for machine learning models is augmented with both real and generated data to improve the model's ability to generalize and perform well in unseen and potentially adverse market conditions.
 
-## Problem Statement
-The goal of this project is to identify which alpha factors are most effective for predicting stock prices. To achieve this goal, the following questions will be addressed:
+3. Quantum-Inspired Optimization for Portfolio Construction
+This experiment explores the use of quantum-inspired optimization algorithms, such as Quantum Annealing or QAOA, to optimize portfolio construction. The project aims to design a new approach for representing the portfolio construction problem in a quantum-inspired framework and develop a custom optimization algorithm that efficiently finds the optimal portfolio weights. The performance of the quantum-inspired algorithm is benchmarked against classical optimization techniques to demonstrate potential advantages in terms of solution quality, speed, and robustness.
 
-#### What are alpha factors?
-1. How can we collect data for analysis?
-2. How can we engineer effective features from the collected data?
-3. Which machine learning models are best suited for this task?
-4. Which alpha factors are most effective for predicting stock prices?
-## Data Collection
-Data collection is a crucial aspect of this project. We need to collect data that can be used to train our machine learning models. The following sources will be used for data collection:
+4. Graph Neural Networks for Inter-Asset Relationships
+The focus of this experiment is to model and exploit the relationships between different financial assets dynamically using Graph Neural Networks (GNNs). A financial asset graph is created where nodes represent individual assets, and edges represent the relationships between them. A GNN-based approach is developed to learn optimal representations of these relationships over time, and the learned features are incorporated into previous quantitative investment strategies. The objective is to demonstrate how the extracted connections lead to improved signal quality and ultimately generated alpha.
 
-1. Quandl - a platform that provides financial and economic data from various sources.
-2. Yahoo Finance - a website that provides financial news, data, and analytics.
-We will be collecting data related to the following:
+5. Reinforcement Learning for Dynamic Factor Weighting
+This experiment aims to design a reinforcement learning-based approach for dynamically adjusting the weights of alpha factors in response to changing market conditions. A deep reinforcement learning agent (DQN/PPO hybrid) is trained to learn an optimal policy for adjusting the factor weights in a multi-factor quantitative investment model. The agent's objective is to maximize risk-adjusted returns while adapting to evolving market conditions, reducing the need for constant manual intervention and factor rebalancing.
 
-1. Stock prices - daily closing prices for stocks of interest.
-2. Stock fundamentals - calculated metrics based on financial statement information 
-3. Financial statements - income statements, balance sheets, and cash flow statements for the companies of interest.
-4. Economic indicators - macroeconomic indicators such as GDP, inflation, and interest rates.
-## Feature Engineering
-Feature engineering is the process of creating new features from raw data. Effective feature engineering can greatly improve the performance of machine learning models. The following features will be engineered:
+## Conclusion
+The AlphaResearch project aims to develop innovative quantitative investment strategies by exploring novel approaches to generate alpha factors and optimize portfolio construction. The experiments leverage state-of-the-art techniques, such as autoencoders, GANs, quantum-inspired optimization algorithms, and reinforcement learning, to tackle the challenges of modern financial markets. The ultimate goal is to improve risk-adjusted returns and generate alpha for investors.
 
+## Appendix 
+More information about the project details including data, modeling, and references: 
+
+### Data 
 1. Technical indicators - features such as moving averages, relative strength index, and stochastics.
 2. Fundamental indicators - features such as earnings per share, book value per share, and price to earnings ratio.
 3. Economic indicators - features such as GDP, inflation, and interest rates.
-## Machine Learning Models
+
+### Machine Learning Models
 1. Variational Autoencoders (VAEs): Used for unsupervised feature learning, data compression, and data generation in finance, such as anomaly detection.
 2. Gaussian Mixture Models (GMMs): Used for clustering and classification of financial data, such as market segmentation or risk analysis.
 3. Gradient Boosting Machines (GBMs): Used for ensemble learning and predictive modeling of financial data, such as stock price prediction or credit risk assessment.
@@ -55,7 +50,7 @@ Feature engineering is the process of creating new features from raw data. Effec
 The VAEs are particularly useful for unsupervised learning and data generation, while GMMs are well suited for clustering and classification of financial data. GBMs have proven to be effective for ensemble learning and predictive modeling, and GARCH models are commonly used for volatility forecasting in financial markets. The Black-Scholes model is a widely recognized and respected tool for pricing options contracts, while RL models are ideal for optimizing trading strategies. Temporal time Transformers are excellent for time series data processing, while LSTMs are well suited for predicting time series data with long-term dependencies. Finally, GANs are used for generating synthetic financial data that can be used to train other machine learning models.
 
 
-## Results
+### Results
 The performance of the machine learning models will be evaluated using the following metrics:
 
 Mean Squared Error (MSE): a measure of the average squared difference between the predicted and actual values.
@@ -74,25 +69,8 @@ The results will be presented in a comparative analysis of the different models 
 In addition to these metrics, I will also employ various backtesting techniques to evaluate the performance of the models in terms of alpha generation and return generation. I will calculate the Sharpe Ratio, Information Ratio, and other risk-adjusted performance metrics to assess the models' effectiveness in generating alpha.
 
 I'll use a range of return-based metrics such as cumulative returns, average daily returns, maximum drawdown, and volatility to evaluate the performance of the models. The results of the analysis will be presented in a comparative study of the different models and the effectiveness of the different alpha factors in predicting stock prices.
-## Conclusion
-Through our project, we have demonstrated the potential of machine learning techniques in identifying alpha factors for predicting stock prices. Our analysis of the different models and alpha factors highlights the importance of effective data collection and feature engineering to improve model performance.
 
-Our experiments have shown that Gradient Boosting Machines (GBMs) and Long Short-Term Memory Networks (LSTMs) are effective models for predicting stock prices with the ability to capture long-term dependencies in the data. Additionally, Gaussian Mixture Models (GMMs) were useful for clustering and classification of financial data for market segmentation and risk analysis. We have also found that Reinforcement Learning (RL) models have the potential to optimize trading strategies in financial markets, and Temporal time Transformers and GARCH models were effective for time series data processing and volatility forecasting, respectively.
-
-In addition to these expected findings, we also learned some unexpected insights. We found that Generative Adversarial Networks (GANs) did not perform well in generating synthetic financial data for training machine learning models, despite their popularity in other fields. This could be due to the unique complexities and dynamics of financial data.
-
-We also initially expected that RL models would outperform other models in optimizing trading strategies. However, we found that their performance was highly dependent on the specific financial data and trading environment being used.
-
-While GBMs and LSTMs performed well in predicting stock prices, we found that their performance could be significantly improved by incorporating more advanced feature engineering techniques such as natural language processing and sentiment analysis. This suggests that there is still much room for improvement in the development of effective alpha factors for predicting stock prices.
-
-Based on the findings of this project, there are several key takeaways that I would like to implement in future research. First, I learned that the performance of machine learning models in finance is highly dependent on the quality and quantity of data available for analysis. Therefore, in future projects, I plan to focus more on improving data collection and preprocessing techniques to ensure that the models are working with the most relevant and accurate data possible.
-
-Secondly, I would like to explore more advanced feature engineering techniques such as natural language processing and sentiment analysis to improve the performance of models like Gradient Boosting Machines (GBMs) and Long Short-Term Memory Networks (LSTMs). Incorporating these techniques can help to capture more nuanced information from financial news and social media that can be used to generate more accurate alpha factors for predicting stock prices.
-
-Lastly, I want to explore more advanced reinforcement learning techniques and trading strategies to see if there are ways to improve the performance of these models in financial markets. I plan to use more complex environments that reflect the dynamics of real-world financial markets to see if the models can perform better in more realistic scenarios. Overall, I believe that implementing these changes will help to improve the performance and accuracy of machine learning models for predicting stock prices and optimizing trading strategies in finance.
-Overall, this project has important implications for the field of quantitative finance and can provide valuable insights for investment strategies. By continuing to explore and develop more advanced machine learning techniques and feature engineering methods, we can further improve the accuracy and effectiveness of predicting stock prices and ultimately optimize investment strategies.
-
-## References 
+### References 
 Guo, J., Li, Y., & Sun, X. (2020). Alpha combination: An effective way to improve factor-based stock selection. Journal of Banking & Finance, 117, 105819.
 
 Liu, B., Wang, Y., & Wang, Y. (2020). Developing Deep Learning-based Alpha Factor Models Using Transfer Learning. Journal of Empirical Finance, 56, 56-70.
@@ -122,9 +100,3 @@ Zhang, Y., Li, X., Li, L., Li, S., & Li, H. (2019). A Stock Price Prediction Fra
 Zhao, Y., Li, C., & Huang, R. (2019). A hybrid model combining deep learning and recurrent neural network for stock price forecasting. Applied Intelligence, 49(5), 1731-1743.
 
 Zhu, L., Wang, J., & Qian, X. (2020). An Online Learning Framework for Portfolio Selection. IEEE Transactions on Neural Networks and Learning Systems, 31(10), 3792-3805.
-
-
-
-
-
-d
